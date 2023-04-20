@@ -1,0 +1,187 @@
+
+
+@font-face {
+    font-family: 'Bungee Spice', cursive;
+    src: url(/BungeeSpice-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(/Norse-Bold.otf) format("opentype");
+}
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #002B5B;
+}
+
+main {  
+    
+    width: 90%;    
+    margin: 0 auto;
+    display: flex;
+    
+}
+.image-cointainer {
+    background-image: url(/charlesdeluvio-j47zV8LCE7M-unsplash.jpg);
+    background-size: cover;
+    width: 1fr
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10vh;
+    
+    
+    
+    
+
+}
+img {
+    height: 80%;
+    
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+}
+.author {
+    
+    margin-bottom: 5vh;    
+    color: whitesmoke;
+    
+
+  
+}
+.logo {
+    background-color: rgba(0, 0, 0, 0.438);
+    max-height: 180px;
+    min-width: 100%;
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.logo-text {
+    font-family: "Norse Bold", sans-serif;
+    color: orangered;
+    font-size: 5.5rem;
+
+
+}
+
+.section-wrapper {    
+    width: 3fr;
+    background-color: #2d3655;;
+    border: 2px black solid;
+    display: grid;   
+    height: 100vh; 
+    font-family: Helvetica;  
+    font-style: italic; 
+    justify-content: center; 
+    
+
+}
+.legend {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Bungee Spice';
+}
+#pizza{
+    font-family: 'Bungee Spice';
+}
+.text {
+    padding: 2rem;    
+    height: 1fr;
+    background-color: #2d3655;
+    font-family: 'Bungee Spice';
+    font-weight: 100;
+    font-size: 1.1rem;
+
+}
+
+label {
+    display: grid;
+    font-family: 'Bungee Spice';
+    
+    
+}
+.form {
+   height: 60vh;
+   
+}
+
+.fieldset1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 1rem;
+    height: 30vh;
+    border: none; 
+    
+}
+
+input {
+    max-width: 200px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: #010202a9;
+   
+    
+}
+input:focus {
+    box-shadow: 1px 1px 10px yellow;
+    
+}
+
+.help {
+    display: none;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0.2em 0 1em 0;
+    color: #c00;
+  }
+  
+  .invalid .help {
+    display: block;
+  }
+  
+  .invalid label, .invalid input {
+    color: #c00;
+    border-color: #c00;
+  }
+
+button {
+    margin-left: 3rem;
+    border-radius: 5px;    
+    background: linear-gradient(#F1A200, #cc1300);
+    height: 2.5rem;
+    max-width: 200px;
+    color: #090b11;
+}
+h3 {
+    color: #F1A200
+    text-shadow: 1px 1px 5px ;
+    margin-left: 2.5rem;
+}
+
+.log-in {
+    font-family: 'Bungee Spice';
+ 
+}
+

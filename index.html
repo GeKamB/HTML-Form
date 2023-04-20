@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Form</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<script src="/app.js" defer></script>
+
+
+    
+</head>
+<body>    
+    <main class="main">
+        <div class="image-cointainer">
+            <div class="logo">
+             <img src="/odin-lined.png" alt="Odin logo" loading="lazy" >   
+             <h1 class="logo-text">ODIN</h1>
+            </div>
+
+            <div class="author">
+            <address>Photo by <strong> <a rel='author' href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a></strong> on <a href="https://unsplash.com/photos/j47zV8LCE7M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></address>
+            </div>
+        </div>
+        <div class="section-wrapper">
+            <div class="text">
+                <h1 id="pizza">Pizza Portal</h1>
+                <article>This is not a real online service! You know you need something like this in your life to help you realize your deepest
+                dreams.<br> Sign up now to become Pizza's community member !.<br><br> You know you want to.</article>
+            </div>
+            <section id="myForm" class="form">
+                <form action method >
+                    <div class="legend">
+                      <legend>Register now !</legend>
+                      <p> Required fields are followed by
+                      <strong><span aria-label="required">*</span></strong>.
+                      </p>
+                  </div>
+                  <fieldset class="fieldset1">
+                      <div>
+                          <label for="first-name">
+                            <span>First Name: </span>
+                            <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" required/>
+                          </label>
+                          <p class="help">Please enter your first name.</p>
+                        </div>
+                        <div>
+                          <label for="name">
+                            <span>Last Name: </span>
+                            <input type="text" id="last-name" name="last-name" title="Last-Name" autocomplete="family-name" required/>
+                          </label>
+                          <p class="help">Please enter your last name.</p>
+                        </div>
+                        <div>
+                          <label for="mail">
+                            <span>Email: </span>
+                            <input type="email" id="mail" name="usermail" title="example@gmail.com" autocomplete="email" required/>
+                          </label>
+                          <p class="help">Please enter your email.</p>
+                        </div>
+                        <div>
+                          <label for="phone">
+                            <span>Phone number: </span>
+                            <input type="tel" id="tel" name="phone" title="Format: 123-456-7890" autocomplete="tel" />
+                          </label>
+                          <p class="help">Please enter your email.</p>
+                        </div>
+                        <div>
+                          <label for="pwd">
+                            <span>Password: </span>
+                            <input type="password" id="pwd" name="password" autocomplete="new-password" required/>     
+                            
+                          </label>
+                                                  
+                        </div>
+                        <div>
+                          <label for="confirmpwd">
+                              <span>Confirm Password</span>
+                              <input type="password" id="confirmpwd" name="confirm-password" autocomplete="new-password" required/>
+                          </label>
+                          <p class="help">Password incorect.</p>
+                        </div>
+
+                  </fieldset>
+                    
+                    <section>
+                      <div>
+                        <button type="submit">Validate the payment</button>
+                      </div>
+                      <h3>Already have an account? <span class="log-in"><a href>Log in</a></span></h3>
+                    </section>
+                    
+                </form>
+            </section>
+            
+        </div>
+    </main>
+</body>
+</html>
