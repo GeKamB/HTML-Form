@@ -121,9 +121,11 @@ label {
     font-family: 'Bungee Spice';
     
     
+    
+    
 }
 .form {
-   height: 60vh;
+   
    padding: 1rem;
    
 }
@@ -133,11 +135,61 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     padding: 1rem;
-    height: 30vh;
-    border: none; 
+    height: 30vh;    
+    gap: 2rem;
    
     
 }
+fieldset {
+    margin-top: 2rem;
+    border: none;
+}
+
+form label #toggleBtn {  
+    margin-top: 0.3rem;
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.63);
+}
+form label #toggleBtn::before {
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+form label #toggleBtn.hide::before {
+    content: '\f070';
+    font-family: fontAwesome;
+}
+#validation {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.192);    
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+#validation ul li {
+    position: relative;
+    list-style: none;
+    color: #fff;
+    transition: 0.5s;
+
+}
+#validation ul li::before {
+    content: '\f192';
+    width: 20px;
+    height: 10px;
+    font-family: fontAwesome;
+    display: inline-flex;
+}
+
+
+
+
+
 
 input {
     max-width: 200px;
@@ -157,6 +209,15 @@ input:invalid {
     
   }
 
+  input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #010202a9;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+    -webkit-text-fill-color: #010202a9;
+} 
 
   input::placeholder {
     font-family: helvetica, sans-serif;
@@ -192,6 +253,7 @@ input:invalid {
   }
 
 button {
+    margin-top: 2.5rem;
     margin-left: 3rem;
     border-radius: 5px;    
     background: linear-gradient(#F1A200, #cc1300);
@@ -210,3 +272,6 @@ h3 {
  
 }
 
+#validation ul li.valid {
+    color: greenyellow;
+}

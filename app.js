@@ -2,8 +2,87 @@ const form = document.querySelector("form");
 const tel = document.getElementById("tel");
 const telError = document.querySelector("#tel + span.error");
 const email = document.getElementById('email');
-const emailError = document.querySelector('#email + span.error')
+const emailError = document.querySelector('#email + span.error');
+const password = document.getElementById('pwd');
+const confirmPassword = document.getElementById('confirmpwd');
+const confirmPasswordError =document.querySelector('#confirmpwd + span.error')
+const toggleBtn = document.getElementById('toggleBtn');
+const validation = document.getElementById('validation');
 
+let lowerCase = document.getElementById('lower');
+let upperCase = document.getElementById('upper');
+let digit = document.getElementById('number');
+let specialChar = document.getElementById('special');
+let minLength = document.getElementById('length');
+
+function checkPassword(data) {
+  const lower = new RegExp('(?=.*[a-z])');
+  const upper = new RegExp('(?=.*[A-Z])');
+  const number = new RegExp('(?=.*[0-9])');
+  const special = new RegExp('(?=.*[!@#\$%\^&\*])');
+  const length = new RegExp('(?=.{8,})');  
+  
+  if(lower.test(data)) {
+    lowerCase.classList.add('valid');
+  } else {
+    lowerCase.classList.remove('valid');
+  }
+  if(upper.test(data)) {
+    upperCase.classList.add('valid');
+  } else {
+    upperCase.classList.remove('valid');
+  }
+  if(number.test(data)) {
+    digit.classList.add('valid');
+  } else {
+    digit.classList.remove('valid');
+  }
+  if(special.test(data)) {
+    specialChar.classList.add('valid');
+  } else {
+    specialChar.classList.remove('valid');
+  }
+  if(length.test(data)) {
+    minLength.classList.add('valid');
+  } else {
+    minLength.classList.remove('valid');
+  }
+}
+
+toggleBtn.onclick =  function() {
+  if (password.type === 'password') {
+    password.setAttribute('type', 'text');
+    confirmPassword.setAttribute('type', 'text');
+    toggleBtn.classList.add('hide');
+  } else {
+    password.setAttribute('type', 'password');
+    confirmPassword.setAttribute('type', 'password');
+    toggleBtn.classList.remove('hide');
+  }
+}
+
+
+
+
+password.addEventListener('focusin', () => {
+ validation.style.display = 'block';
+});
+password.addEventListener('focusout', () => {
+  validation.style.display = 'none';
+ });
+
+ confirmPassword.addEventListener('focusout', () => {
+  if (confirmPassword.value.trim() !== '') {
+    if (confirmPassword.value !== password.value) {
+      confirmPassword.classList.add('invalid-input');
+      confirmPasswordError.textContent = '⚠ Password mismatch';
+    }}
+});
+confirmPassword.addEventListener('focusin', () => {
+  if (confirmPassword.classList.contains('invalid-input')) {
+    confirmPassword.classList.remove('invalid-input');
+  }
+});
 
 tel.addEventListener('focusout', () => {
     if (tel.value.trim() !== '') {
