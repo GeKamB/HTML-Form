@@ -37,7 +37,7 @@
                 dreams.<br> Sign up now to become Pizza's community member !.<br><br> You know you want to.</article>
             </div>
             <section id="myForm" class="form">
-                <form action method >
+                <form action method novalidate >
                     <div class="legend">
                       <legend>Register now !</legend>
                       <p> Required fields are followed by
@@ -48,35 +48,35 @@
                       <div>
                           <label for="first-name">
                             <span>First Name: </span>
-                            <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" required/>
-                          </label>
-                          <p class="help">Please enter your first name.</p>
+                            <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" />
+                          </label>                          
                         </div>
                         <div>
                           <label for="name">
                             <span>Last Name: </span>
-                            <input type="text" id="last-name" name="last-name" title="Last-Name" autocomplete="family-name" required/>
-                          </label>
-                          <p class="help">Please enter your last name.</p>
+                            <input type="text" id="last-name" name="last-name" title="Last-Name" autocomplete="family-name" />
+                          </label>                          
                         </div>
                         <div>
-                          <label for="mail">
-                            <span>Email: </span>
-                            <input type="email" id="mail" name="usermail" title="example@gmail.com" autocomplete="email" required/>
+                          <label for="email">
+                            <span>Email:<span class="req">*</span> </span>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="email" required/>
+                            <span class="error" aria-live="polite"></span>
                           </label>
-                          <p class="help">Please enter your email.</p>
+
+                          
                         </div>
                         <div>
                           <label for="phone">
-                            <span>Phone number: </span>
-                            <input type="tel" id="tel" name="phone" title="Format: 123-456-7890" autocomplete="tel" />
-                          </label>
-                          <p class="help">Please enter your email.</p>
+                            <span>Phone number:<span class="req">*</number:span> </span>
+                            <input type="tel" id="tel" name="phone" placeholder="Format: 1234567890" autocomplete="tel" minlength="10" maxlength="10" required/>
+                            <span class="error" aria-live="polite"></span>
+                          </label>                          
                         </div>
                         <div>
                           <label for="pwd">
-                            <span>Password: </span>
-                            <input type="password" id="pwd" name="password" autocomplete="new-password" required/>     
+                            <span>Password:<span class="req">*</number:span> </span>
+                            <input type="password" id="pwd" placeholder="********" name="password" autocomplete="new-password" required/>     
                             
                           </label>
                                                   
@@ -84,9 +84,8 @@
                         <div>
                           <label for="confirmpwd">
                               <span>Confirm Password</span>
-                              <input type="password" id="confirmpwd" name="confirm-password" autocomplete="new-password" required/>
-                          </label>
-                          <p class="help">Password incorect.</p>
+                              <input type="password" id="confirmpwd" placeholder="********" name="confirm-password" autocomplete="new-password" required/>
+                          </label>                          
                         </div>
 
                   </fieldset>
