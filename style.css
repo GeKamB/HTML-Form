@@ -33,7 +33,7 @@ main {
     
 }
 .image-cointainer {
-    background-image: url(/charlesdeluvio-j47zV8LCE7M-unsplash.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
     width: 1fr;
     height: 100vh;
