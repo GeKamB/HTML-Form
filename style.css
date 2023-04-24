@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Bungee Spice', cursive;
-    src: url(/BungeeSpice-Regular.ttf) format("truetype");
+    src: url(\BungeeSpice-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Norse Bold";
-    src: url(/Norse-Bold.otf) format("opentype");
+    src: url(\Norse-Bold.otf) format("opentype");
 }
 input,
 textarea,
