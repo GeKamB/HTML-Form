@@ -137,6 +137,7 @@ label {
     grid-template-rows: 100px 1fr;
     padding: 1rem;
     height: 30vh;    
+    align-items: baseline;
     
    
     
