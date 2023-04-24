@@ -62,7 +62,7 @@
                         <div>
                           <label for="email">
                             <span>Email:<span class="req">*</span> </span>
-                            <input type="email" id="email" name="email" placeholder="example@gmail.com"  required/>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="email"  required/>
                             <span class="error" aria-live="polite"></span>
                           </label>
 
@@ -71,7 +71,7 @@
                         <div>
                           <label for="phone">
                             <span>Phone number:<span class="req">*</number:span> </span>
-                            <input type="tel" id="tel" name="phone" placeholder="Format: 1234567890" minlength="10" maxlength="10" required/>
+                            <input type="tel" id="tel" name="phone" placeholder="Format: 1234567890" minlength="10" maxlength="10" autocomplete="tel" required/>
                             <span class="error" aria-live="polite"></span>
                           </label>                          
                         </div>
@@ -94,7 +94,7 @@
                         </div>
                         
                         <div>
-                          <label for="confirmpwd">
+                          <label class="lab" for="confirmpwd">
                               <span>Confirm Password</span>
                               <input type="password" id="confirmpwd" placeholder="********" name="confirm-password" autocomplete="new-password" required/>
                               <span class="error" aria-live="polite"></span>

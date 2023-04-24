@@ -134,11 +134,15 @@ label {
     max-width: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 100px 1fr;
     padding: 1rem;
     height: 30vh;    
-    gap: 2rem;
+    
    
     
+}
+.lab {
+    margin-top: -8px;
 }
 fieldset {
     margin-top: 2rem;
