@@ -117,12 +117,12 @@ a {
 }
 
 label {
+    display: block;
+    font-family: 'Bungee Spice';    
+    
+}
+.email {
     display: grid;
-    font-family: 'Bungee Spice';
-    
-    
-    
-    
 }
 .form {
    
@@ -133,11 +133,12 @@ label {
 .fieldset1 {
     max-width: 600px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 100px 1fr;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-auto-rows: minmax(100px, auto);
     padding: 1rem;
     height: 30vh;    
     align-items: baseline;
+    margin-bottom: 1rem;
     
    
     
@@ -233,7 +234,7 @@ input:-webkit-autofill:focus {
   input:focus:invalid {
     outline: none;
   }
-  .req {
+  .req {    
     font-family: helvetica, sans-serif;
     color: red;
     font-size: 1.5rem;
